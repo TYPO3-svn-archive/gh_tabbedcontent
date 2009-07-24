@@ -1,0 +1,73 @@
+plugin.tx_ghtabbedcontent_pi1 {
+	pageUid = {$plugin.tx_ghtabbedcontent_pi1.pageUid}
+	contentCol = {$plugin.tx_ghtabbedcontent_pi1.contentCol}
+	allWrapTag = {$plugin.tx_ghtabbedcontent_pi1.allWrapTag}
+	contentWrap = {$plugin.tx_ghtabbedcontent_pi1.contentWrap}
+	menuFirst = {$plugin.tx_ghtabbedcontent_pi1.menuFirst}
+	menuWrap = {$plugin.tx_ghtabbedcontent_pi1.menuWrap}
+	itemTag = {$plugin.tx_ghtabbedcontent_pi1.itemTag}
+  keepUrlParameters = {$plugin.tx_ghtabbedcontent_pi1.keepUrlParameters}
+  includeNotInMenu = {$plugin.tx_ghtabbedcontent_pi1.includeNotInMenu}
+
+  _CSS_DEFAULT_STYLE (
+		.tx_ghtabbedcontent_pi1 {
+		}
+
+		.tx_ghtabbedcontent_menu {
+			list-style-type: none;
+			list-style-image: none;
+			margin: 0;
+			border: 0;
+			padding: 0;
+		}
+
+		.tx_ghtabbedcontent_menu li {
+			display: block;
+			float: left;
+			width: 33.3%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.tx_ghtabbedcontent_menu li a {
+			display: block;
+			overflow: hidden;
+			width: 100%;
+			height: 1.7em;
+			margin: 0;
+			padding: .5em 0;
+			text-align: center;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.tx_ghtabbedcontent_menu li.pid46 {
+			background-color: #fee;
+		}
+
+		.tx_ghtabbedcontent_menu li.pid47 {
+			background-color: #efe;
+		}
+
+		.tx_ghtabbedcontent_menu li.pid48 {
+			background-color: #eef;
+		}
+
+		.tx_ghtabbedcontent_content {
+			padding: .5em;
+		}
+
+		.selected46 .tx_ghtabbedcontent_content {
+			background-color: #fee;
+		}
+
+		.selected47 .tx_ghtabbedcontent_content {
+			background-color: #efe;
+		}
+
+		.selected48 .tx_ghtabbedcontent_content {
+			background-color: #eef;
+		}
+  )
+}

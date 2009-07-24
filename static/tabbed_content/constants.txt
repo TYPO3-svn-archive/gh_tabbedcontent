@@ -1,0 +1,21 @@
+plugin.tx_ghtabbedcontent_pi1 {
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/a; type=int+; label=pageUid: UID of the page containing the content pages
+	pageUid = 0
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/b; type=int+; label=contentCol: Column (1=left, 0=normal, 2=right, 3=border)
+	contentCol = 0
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/c; type=text; label=allWrapTag: HTML tag wrapped around the whole plugin
+	allWrapTag = div
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/d; type=wrap; label=contentWrap: Wrap around the content area
+	contentWrap = <div class="tx_ghtabbedcontent_content">|</div>
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/e; type=boolean; label=menuFirst: Render menu above content
+	menuFirst = 1
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/f; type=wrap; label=menuWrap: Wrap around the whole menu
+	menuWrap = <ul class="tx_ghtabbedcontent_menu">|</ul>
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/g; type=text; label=itemTag: HTML tag wrapped around a single menu item
+	itemTag = li
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/h; type=boolean; label=keepUrlParameters: preserve parameters from original URL
+  keepUrlParameters = 0
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/i; type=boolean; label=includeNotInMenu: include pages marked as "Not in menu""
+  includeNotInMenu = 0
+
+}
