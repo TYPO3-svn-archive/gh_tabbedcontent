@@ -14,8 +14,10 @@ plugin.tx_ghtabbedcontent_pi1 {
 	# cat=plugin.tx_ghtabbedcontent_pi1/basics/g; type=text; label=itemTag: HTML tag wrapped around a single menu item
 	itemTag = li
 	# cat=plugin.tx_ghtabbedcontent_pi1/basics/h; type=boolean; label=keepUrlParameters: preserve parameters from original URL
-  keepUrlParameters = 0
+	keepUrlParameters = 0
 	# cat=plugin.tx_ghtabbedcontent_pi1/basics/i; type=boolean; label=includeNotInMenu: include pages marked as "Not in menu""
-  includeNotInMenu = 0
+	includeNotInMenu = 0
+	# cat=plugin.tx_ghtabbedcontent_pi1/basics/j; type=boolean; label=useTSfromTab: use TS Setup from tab page instead from actual page
+	useTSfromTab = 0
 
 }

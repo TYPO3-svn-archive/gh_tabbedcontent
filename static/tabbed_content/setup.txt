@@ -6,10 +6,11 @@ plugin.tx_ghtabbedcontent_pi1 {
 	menuFirst = {$plugin.tx_ghtabbedcontent_pi1.menuFirst}
 	menuWrap = {$plugin.tx_ghtabbedcontent_pi1.menuWrap}
 	itemTag = {$plugin.tx_ghtabbedcontent_pi1.itemTag}
-  keepUrlParameters = {$plugin.tx_ghtabbedcontent_pi1.keepUrlParameters}
-  includeNotInMenu = {$plugin.tx_ghtabbedcontent_pi1.includeNotInMenu}
+	keepUrlParameters = {$plugin.tx_ghtabbedcontent_pi1.keepUrlParameters}
+	includeNotInMenu = {$plugin.tx_ghtabbedcontent_pi1.includeNotInMenu}
+	useTSfromTab = {$plugin.tx_ghtabbedcontent_pi1.useTSfromTab}
 
-  _CSS_DEFAULT_STYLE (
+	_CSS_DEFAULT_STYLE (
 		.tx_ghtabbedcontent_pi1 {
 		}
 

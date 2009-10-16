@@ -39,6 +39,7 @@
  */
 
 require_once(PATH_tslib.'class.tslib_pibase.php');
+// require_once(PATH_t3lib.'class.t3lib_page.php');
 
 
 /**
@@ -150,7 +151,30 @@ class tx_ghtabbedcontent_pi1 extends tslib_pibase {
 				'languageField' => 'sys_language_uid',
 			),
 		);
-		return $this->cObj->CONTENT($conf);
+
+		if(!$this->conf['useTSfromTab']) {
+			return $this->cObj->CONTENT($conf);
+		}
+
+		// backup of original template object
+		$orig_tmpl = $GLOBALS['TSFE']->tmpl;
+
+		// create template object with rootline of the tab page
+		$pageSelect = t3lib_div::makeInstance('t3lib_pageSelect');
+		$rootLine = $pageSelect->getRootLine($this->contentPid);
+		$tmpl = t3lib_div::makeInstance(t3lib_TStemplate);
+		$tmpl->init();
+		$tmpl->start($rootLine);
+
+		// switch global context to temporary template object
+		$GLOBALS['TSFE']->tmpl = $tmpl;
+
+		// render tab content
+		$content = $this->cObj->CONTENT($conf);
+
+		// restore original template object
+		$GLOBALS['TSFE']->tmpl = $orig_tmpl;
+		return $content;
 	}
 
 	/**

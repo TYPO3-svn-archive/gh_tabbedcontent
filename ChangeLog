@@ -1,6 +1,11 @@
+2009-10-16 Gregor Hermens  <gregor@a-mazing.de>
+
+	* added feature: Render tab content with TS template of tab page.
+	* release of version 0.3.0
+
 2009-07-24 Gregor Hermens  <gregor@a-mazing.de>
 
-  * release of version 0.2.0, initial upload to TER
+	* release of version 0.2.0, initial upload to TER
 
 2009-05-08 Gregor Hermens  <gregor@a-mazing.de>
 
