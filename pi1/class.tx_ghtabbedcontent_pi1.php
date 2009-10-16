@@ -30,8 +30,8 @@
  *   66:     function main($content, $conf)
  *  102:     function getContentPid()
  *  142:     function getContent()
- *  161:     function getMenu()
- *  218:     function buildUrlParameters($getVars)
+ *  184:     function getMenu()
+ *  241:     function buildUrlParameters($getVars)
  *
  * TOTAL FUNCTIONS: 5
  * (This index is automatically created/updated by the extension "extdeveval")
@@ -39,7 +39,6 @@
  */
 
 require_once(PATH_tslib.'class.tslib_pibase.php');
-// require_once(PATH_t3lib.'class.t3lib_page.php');
 
 
 /**
