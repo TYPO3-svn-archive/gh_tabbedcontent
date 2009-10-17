@@ -159,8 +159,7 @@ class tx_ghtabbedcontent_pi1 extends tslib_pibase {
 		$orig_tmpl = $GLOBALS['TSFE']->tmpl;
 
 		// create template object with rootline of the tab page
-		$pageSelect = t3lib_div::makeInstance('t3lib_pageSelect');
-		$rootLine = $pageSelect->getRootLine($this->contentPid);
+		$rootLine = t3lib_BEfunc::BEgetRootLine($this->contentPid);
 		$tmpl = t3lib_div::makeInstance(t3lib_TStemplate);
 		$tmpl->init();
 		$tmpl->start($rootLine);

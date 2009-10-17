@@ -1,3 +1,7 @@
+2009-10-17 Gregor Hermens  <gregor@a-mazing.de>
+
+	* switched from t3lib_page to t3lib_BEfunc for getting the rootline
+
 2009-10-16 Gregor Hermens  <gregor@a-mazing.de>
 
 	* added feature: Render tab content with TS template of tab page.
